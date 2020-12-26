@@ -33,7 +33,7 @@ $(document).ready(function() {
             var type = "markdown";
             // delete '.md'
             if (name.substr(-3, 3) == ".md") {
-                name = name.substr(3, name.length - 3);
+                name = name.substr(3, name.length - 6);
             } else if (name.substr(-5, 5) == ".html") {
                 name = name.substr(0, name.length - 5);
                 type = "html";
