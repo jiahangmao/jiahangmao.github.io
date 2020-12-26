@@ -97,6 +97,8 @@ body {
 
 .main {
     padding: 20px;
+    margin:0 auto; 
+    width:500px;
 }
 
 @media (min-width: 768px) {
@@ -122,9 +124,6 @@ body {
 
 .placeholders h4 {
     margin-bottom: 0;
-    width:250px; /* or whatever width you want. */
-    max-width:250px; /* or whatever width you want. */
-    display: inline-block;
 }
 
 .placeholder {
