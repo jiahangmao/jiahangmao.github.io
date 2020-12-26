@@ -96,15 +96,13 @@ body {
  */
 
 .main {
-    padding: 20px; 
-    margin-left: 80px;
-    width:700px;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
     .main {
         padding-right: 40px;
-        padding-left: 40px; 
+        padding-left: 40px;
     }
 }
 
@@ -119,7 +117,7 @@ body {
 
 .placeholders {
     margin-bottom: 30px;
-    text-align: center; 
+    text-align: center;
 }
 
 .placeholders h4 {
