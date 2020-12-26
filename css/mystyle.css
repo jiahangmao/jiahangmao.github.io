@@ -96,13 +96,19 @@ body {
  */
 
 .main {
-    padding: 200px;
+    padding: 20px;
+    width:250px; /* or whatever width you want. */
+    max-width:250px; /* or whatever width you want. */
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
     .main {
         padding-right: 40px;
         padding-left: 40px;
+        width:250px; /* or whatever width you want. */
+        max-width:250px; /* or whatever width you want. */
+        display: inline-block;
     }
 }
 
@@ -118,6 +124,9 @@ body {
 .placeholders {
     margin-bottom: 30px;
     text-align: center;
+    width:250px; /* or whatever width you want. */
+    max-width:250px; /* or whatever width you want. */
+    display: inline-block;
 }
 
 .placeholders h4 {
