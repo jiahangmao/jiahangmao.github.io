@@ -96,7 +96,7 @@ body {
  */
 
 .main {
-    padding: 20px;
+    padding: 200px;
 }
 
 @media (min-width: 768px) {
