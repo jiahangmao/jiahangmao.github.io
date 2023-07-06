@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 200, 169);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, calc(100vw / 5));
+    grid-gap: calc(100vw / 30);
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: calc(100vw / 5 * 4 / 3); /* calculate height based on aspect ratio */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+}
+
+.description {
+    padding: 10px;
+}
+
+.title {
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #007BFF; 
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.short-description {
+    margin-bottom: 10px;
+}
