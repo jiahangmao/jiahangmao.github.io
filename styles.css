@@ -1,9 +1,46 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
     background-color: rgb(212, 200, 169);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+  }
+  
+.profile-picture {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery {
@@ -12,7 +49,9 @@ body {
     grid-gap: calc(60px);
     padding: 20px;
     justify-content: center;
+    width: 100%;
 }
+
 
 .card {
     display: flex;
@@ -20,7 +59,7 @@ body {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.5s ease;
+    transition: transform 0.15s ease;
     height: 400px; /* calculate height based on aspect ratio */
     width: 350px;
 }
@@ -30,12 +69,12 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: height 0.5s ease;
+    transition: height 0.15s ease;
 }
 
 .card:hover .image {
     height: 70%;
-    transition: height 0.5s ease;
+    transition: height 0.15s ease;
 }
 
 .description {
@@ -43,14 +82,14 @@ body {
     justify-content: space-between;
     height: 0;
     padding: 0;
-    transition: height 0.5s ease, padding 0.5s ease;
+    transition: height 0.15s ease, padding 0.15s ease;
     overflow: hidden;
 }
 
 .card:hover .description {
     height: 30%;
     padding: 10px;
-    transition: height 0.5s ease, padding 0.5s ease;
+    transition: height 0.15s ease, padding 0.15s ease;
 }
 
 .title {
@@ -79,3 +118,20 @@ body {
 .short-description {
     margin-bottom: 3px;
 }
+
+.resume { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact, .resume {
+    transition: all 0.5s;
+  }

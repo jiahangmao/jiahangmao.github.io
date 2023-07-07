@@ -5,55 +5,120 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="gallery">
-    <div class="card">
-      <div class="image" style="background-image: url('images/image1.png');"></div>
-      <div class="description">
-        <h3 class="title">Title placeholder</h3>
-        <div class="tags">
-            <span class="tag cplusplus">C++</span>
-            <span class="tag opengl">OpenGL</span>
-        </div>
-            <p class="short-description">Short description placeholder.</p>
-            <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+    <div class="profile">
+        <img class="profile-picture" src="images/profile.png">
+        <h1>John</h1>
+        <nav>
+          <a href="#gallery">Projects</a>
+          <a href="#contact">Contacts</a>
+          <a href="#resume">Resume</a>
+        </nav>
+    </div>
+    <div id="gallery-container" class="gallery-container">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <div class="card">
+            <div class="image" style="background-image: url('images/image1.png');"></div>
+            <div class="description">
+                <h3 class="title">Title placeholder</h3>
+                <div class="tags">
+                    <span class="tag cplusplus">C++</span>
+                    <span class="tag opengl">OpenGL</span>
+                </div>
+                    <p class="short-description">Short description placeholder.</p>
+                    <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+                </div>
+            </div>
+            <div class="card">
+            <div class="image" style="background-image: url('images/image2.png');"></div>
+            <div class="description">
+                <h3 class="title">Title placeholder</h3>
+                <div class="tags">
+                    <span class="tag cplusplus">C++</span>
+                    <span class="tag opengl">OpenGL</span>
+                </div>
+                    <p class="short-description">Short description placeholder.</p>
+                    <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+                </div>
+            </div>
+            <div class="card">
+            <div class="image" style="background-image: url('images/image3.png');"></div>
+            <div class="description">
+                <h3 class="title">Title placeholder</h3>
+                <div class="tags">
+                    <span class="tag cplusplus">C++</span>
+                    <span class="tag opengl">OpenGL</span>
+                </div>
+                    <p class="short-description">Short description placeholder.</p>
+                    <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+                </div>
+            </div>
+            <div class="card">
+            <div class="image" style="background-image: url('images/image1.png');"></div>
+            <div class="description">
+                <h3 class="title">Title placeholder</h3>
+                <div class="tags">
+                    <span class="tag cplusplus">C++</span>
+                    <span class="tag opengl">OpenGL</span>
+                </div>
+                    <p class="short-description">Short description placeholder.</p>
+                    <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card">
-      <div class="image" style="background-image: url('images/image2.png');"></div>
-      <div class="description">
-        <h3 class="title">Title placeholder</h3>
-        <div class="tags">
-            <span class="tag cplusplus">C++</span>
-            <span class="tag opengl">OpenGL</span>
-        </div>
-            <p class="short-description">Short description placeholder.</p>
-            <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
-        </div>
-    </div>
-    <div class="card">
-      <div class="image" style="background-image: url('images/image3.png');"></div>
-      <div class="description">
-        <h3 class="title">Title placeholder</h3>
-        <div class="tags">
-            <span class="tag cplusplus">C++</span>
-            <span class="tag opengl">OpenGL</span>
-        </div>
-            <p class="short-description">Short description placeholder.</p>
-            <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
-        </div>
-    </div>
-    <div class="card">
-      <div class="image" style="background-image: url('images/image1.png');"></div>
-      <div class="description">
-        <h3 class="title">Title placeholder</h3>
-        <div class="tags">
-            <span class="tag cplusplus">C++</span>
-            <span class="tag opengl">OpenGL</span>
-        </div>
-            <p class="short-description">Short description placeholder.</p>
-            <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
-        </div>
-    </div>
+
+  <div id="resume" class="resume">
+    <h2>Resume</h2>
+    <embed src="files/resume.pdf" type="application/pdf" width="600" height="500">
   </div>
+
+  <div id="contact" class="contact">
+    <h2>Contact Info</h2>
+    <p>Phone: 123-456-7890</p>
+    <p>Email: john@example.com</p>
+    <p><a href="https://www.linkedin.com/in/john">LinkedIn</a></p>
+  </div>
+
 </body>
+
+<script>
+    const sections = {
+      gallery: document.querySelector('.gallery-container'),
+      contact: document.querySelector('.contact'),
+      resume: document.querySelector('.resume'),
+    };
+  
+    const originalDisplays = {
+      gallery: getComputedStyle(sections.gallery).display,
+      contact: getComputedStyle(sections.contact).display,
+      resume: getComputedStyle(sections.resume).display,
+    };
+  
+    const links = {
+      gallery: document.querySelector('a[href="#gallery"]'),
+      contact: document.querySelector('a[href="#contact"]'),
+      resume: document.querySelector('a[href="#resume"]'),
+    };
+  
+    // Hide all sections initially
+    for (let key in sections) {
+      sections[key].style.display = 'none';
+    }
+  
+    // Show the gallery initially
+    sections.gallery.style.display = originalDisplays.gallery;
+  
+    for (let key in links) {
+      links[key].addEventListener('click', function(event) {
+        event.preventDefault();
+        for (let key in sections) {
+          sections[key].style.display = 'none';
+        }
+        sections[key].style.display = originalDisplays[key];
+      });
+    }
+  </script>
+  
+
 </html>
