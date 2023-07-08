@@ -1,4 +1,8 @@
 body {
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,17 +22,22 @@ body {
   
 .profile-picture {
 border-radius: 50%;
-width: 200px;
-height: 200px;
+width: 150px;
+height: 150px;
 }
 
+.footer{
+    text-align:center; 
+    padding:20px;
+    margin: 100px;
+}
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
+    gap: 25px;
+    margin-bottom: 1px;
 }
 
 nav a {
@@ -41,6 +50,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 200px;
 }
 
 .gallery {
@@ -59,7 +69,7 @@ nav a {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.15s ease;
+    transition: transform 0.2s ease;
     height: 400px; /* calculate height based on aspect ratio */
     width: 350px;
 }
@@ -69,12 +79,12 @@ nav a {
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: height 0.15s ease;
+    transition: height 0.2s ease;
 }
 
 .card:hover .image {
-    height: 70%;
-    transition: height 0.15s ease;
+    height: 50%;
+    transition: height 0.2s ease;
 }
 
 .description {
@@ -82,18 +92,18 @@ nav a {
     justify-content: space-between;
     height: 0;
     padding: 0;
-    transition: height 0.15s ease, padding 0.15s ease;
+    transition: height 0.2s ease, padding 0.2s ease;
     overflow: hidden;
 }
 
 .card:hover .description {
-    height: 30%;
+    height: 50%;
     padding: 10px;
-    transition: height 0.15s ease, padding 0.15s ease;
+    transition: height 0.2s ease, padding 0.2s ease;
 }
 
 .title {
-    margin: 0;
+    margin: 5px;
 }
 
 .tags {
@@ -102,21 +112,21 @@ nav a {
 }
 
 .tag {
-    padding: 2px 8px;
+    padding: 2px 2px;
     border-radius: 4px;
     color: white;
 }
 
 .cplusplus {
-    background-color: #ff6347;
+    background-color: #f78181;
 }
 
 .opengl {
-    background-color: #1e90ff;
+    background-color: #66b4ff;
 }
 
 .short-description {
-    margin-bottom: 3px;
+    margin-bottom: 0px;
 }
 
 .resume { 
@@ -126,12 +136,13 @@ nav a {
     align-items: center;
 }
 
-.contact { 
+.about { 
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 600px;
 }
 
-.contact, .resume {
+.about, .resume {
     transition: all 0.5s;
   }
