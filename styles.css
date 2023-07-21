@@ -109,6 +109,14 @@ nav a {
     text-align: center;
 }
 
+.external_link {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    color: rgb(73, 73, 73);
+}
+
+
 .tags {
     display: flex;
     gap: 10px;
