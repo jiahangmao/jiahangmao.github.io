@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Jiahang</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <div class="profile">
-        <img class="profile-picture" src="images/profile.jpg">
-        <h1>Jiahang (Jay) Mao</h1>
-        <nav>
-          <a href="#gallery">Projects</a>
-          <a href="#about">README.md</a>
-          <a href="#resume">Resume</a>
-        </nav>
-    </div>
-    <div id="gallery-container" class="gallery-container">
-        <h2>Projects</h2>
-        <p>About 3D computer graphics and VR</p>
-        <div class="gallery">
-            <div class="card">
-                <div class="image" style="background-image: url('images/image1.png');">
-                </div>
-                <div class="description">
-                    <h3 class="title">Title placeholder</h3>
-                    <p class="short-description">Short description placeholder.</p>
-                    <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
-                    <div class="tags">
-                        <span class="tag cplusplus">C++</span>
-                        <span class="tag opengl">OpenGL</span>
-                    </div>
-                </div>
-            </div>
+  <div class="profile">
+    <img class="profile-picture" src="images/profile.jpg">
+    <h1>Jiahang (Jay) Mao</h1>
+    <nav>
+      <a href="#gallery">Projects</a>
+      <a href="#about">README.md</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </div>
+  <div id="gallery-container" class="gallery-container">
+    <h2>Projects</h2>
+    <p>About 3D computer graphics and VR</p>
+    <div class="gallery">
+      <div class="card">
+        <div class="image" style="background-image: url('images/image1.png');">
         </div>
+        <div class="description">
+          <h3 class="title">Title placeholder</h3>
+          <p class="short-description">Short description placeholder.</p>
+          <p><a href="www.ai.com">link to project demo</a> | <a href="www.code.com">link to code sample</a></p>
+          <div class="tags">
+            <span class="tag cplusplus">C++</span>
+            <span class="tag opengl">OpenGL</span>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
 
   <div id="resume" class="resume">
     <h2>Resume</h2>
@@ -41,10 +44,13 @@
 
   <div id="about" class="about">
     <h2>README.md</h2>
-    <p>Hi, I'm Jay. I'm currently purusing a master in computer graphics at University of Pennsylvania. I graduated from University of Michigan as an undergraduate major in Computer Science and Cognitive Science.
-    <p>I'm broadly interested in building interactive photo-realistic 3D applications at scale that can deliver value to people's life (and gaining proof for us living in a simulation). </p>
-        
-    <p>I'm looking for internship and part-time opportunities in the field of 3D computer graphics / gaming / VR. Feel free to reach out if you need help with your project or want to debate the simulation thing.</p>
+    <p>Hi, I'm Jay. I'm currently purusing a master in computer graphics at University of Pennsylvania. I graduated from
+      University of Michigan as an undergraduate major in Computer Science and Cognitive Science.
+    <p>I'm broadly interested in building interactive photo-realistic 3D applications at scale that can deliver value to
+      people's life (and gaining proof for us living in a simulation). </p>
+
+    <p>I'm looking for internship and part-time opportunities in the field of 3D computer graphics / gaming / VR. Feel
+      free to reach out if you need help with your project or want to debate the simulation thing.</p>
     <p>Contact Info</p>
     <p>Phone: 123-456-7890</p>
     <p>Email: john@example.com</p>
@@ -52,48 +58,48 @@
   </div>
 
   <footer id="footer" class="footer">
-    &copy; 2023 Jay Mao. Created with GPT4.
-</footer>
+    Created with GPT4.
+  </footer>
 
 </body>
 
 <script>
-    const sections = {
-      gallery: document.querySelector('.gallery-container'),
-      about: document.querySelector('.about'),
-      resume: document.querySelector('.resume'),
-    };
-  
-    const originalDisplays = {
-      gallery: getComputedStyle(sections.gallery).display,
-      about: getComputedStyle(sections.about).display,
-      resume: getComputedStyle(sections.resume).display,
-    };
-  
-    const links = {
-      gallery: document.querySelector('a[href="#gallery"]'),
-      about: document.querySelector('a[href="#about"]'),
-      resume: document.querySelector('a[href="#resume"]'),
-    };
-  
-    // Hide all sections initially
-    for (let key in sections) {
-      sections[key].style.display = 'none';
-    }
-  
-    // Show the gallery initially
-    sections.gallery.style.display = originalDisplays.gallery;
-  
-    for (let key in links) {
-      links[key].addEventListener('click', function(event) {
-        event.preventDefault();
-        for (let key in sections) {
-          sections[key].style.display = 'none';
-        }
-        sections[key].style.display = originalDisplays[key];
-      });
-    }
-  </script>
-  
+  const sections = {
+    gallery: document.querySelector('.gallery-container'),
+    about: document.querySelector('.about'),
+    resume: document.querySelector('.resume'),
+  };
+
+  const originalDisplays = {
+    gallery: getComputedStyle(sections.gallery).display,
+    about: getComputedStyle(sections.about).display,
+    resume: getComputedStyle(sections.resume).display,
+  };
+
+  const links = {
+    gallery: document.querySelector('a[href="#gallery"]'),
+    about: document.querySelector('a[href="#about"]'),
+    resume: document.querySelector('a[href="#resume"]'),
+  };
+
+  // Hide all sections initially
+  for (let key in sections) {
+    sections[key].style.display = 'none';
+  }
+
+  // Show the gallery initially
+  sections.gallery.style.display = originalDisplays.gallery;
+
+  for (let key in links) {
+    links[key].addEventListener('click', function (event) {
+      event.preventDefault();
+      for (let key in sections) {
+        sections[key].style.display = 'none';
+      }
+      sections[key].style.display = originalDisplays[key];
+    });
+  }
+</script>
+
 
 </html>

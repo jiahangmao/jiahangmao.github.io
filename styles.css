@@ -18,17 +18,17 @@ body {
     align-items: center;
     margin-bottom: 50px;
     padding-top: 100px;
-  }
-  
-.profile-picture {
-border-radius: 50%;
-width: 150px;
-height: 150px;
 }
 
-.footer{
-    text-align:center; 
-    padding:20px;
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.footer {
+    text-align: left;
+    padding: 20px;
     margin: 100px;
 }
 
@@ -66,11 +66,12 @@ nav a {
 .card {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: rgb(255, 255, 237);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s ease;
-    height: 400px; /* calculate height based on aspect ratio */
+    height: 400px;
+    /* calculate height based on aspect ratio */
     width: 350px;
 }
 
@@ -90,7 +91,7 @@ nav a {
 .description {
     flex-direction: column;
     justify-content: space-between;
-    height: 0;
+    height: 35px;
     padding: 0;
     transition: height 0.2s ease, padding 0.2s ease;
     overflow: hidden;
@@ -104,6 +105,8 @@ nav a {
 
 .title {
     margin: 5px;
+
+    text-align: center;
 }
 
 .tags {
@@ -129,20 +132,21 @@ nav a {
     margin-bottom: 0px;
 }
 
-.resume { 
+.resume {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.about { 
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
 }
 
-.about, .resume {
+.about,
+.resume {
     transition: all 0.5s;
-  }
+}
