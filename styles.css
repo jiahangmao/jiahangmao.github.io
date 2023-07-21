@@ -113,7 +113,8 @@ nav a {
     text-decoration: none;
     color: inherit;
     font-style: italic;
-    color: rgb(73, 73, 73);
+    font-size: 0.8em;
+    color: rgb(116, 116, 116);
 }
 
 
@@ -129,14 +130,17 @@ nav a {
 }
 
 .cplusplus {
+    font-size: 0.7em;
     background-color: #f78181;
 }
 
 .opengl {
+    font-size: 0.7em;
     background-color: #66b4ff;
 }
 
 .short-description {
+    font-size: 0.9em;
     margin-bottom: 0px;
 }
 
