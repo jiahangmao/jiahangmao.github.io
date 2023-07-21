@@ -9,7 +9,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: rgb(212, 200, 169);
+    background-color: rgb(226, 215, 186);
 }
 
 .profile {
@@ -29,7 +29,7 @@ body {
 .footer {
     text-align: left;
     padding: 20px;
-    margin: 100px;
+    margin: 30px;
 }
 
 nav {
@@ -50,7 +50,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .gallery {
@@ -60,6 +60,12 @@ nav a {
     padding: 20px;
     justify-content: center;
     width: 100%;
+    margin-bottom: 60px;
+}
+
+.gallery-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 
@@ -113,12 +119,14 @@ nav a {
     text-decoration: none;
     color: inherit;
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: rgb(116, 116, 116);
 }
 
 
 .tags {
+    margin-top: 10px;
+    margin-bottom: 5px;
     display: flex;
     gap: 10px;
 }
@@ -131,12 +139,12 @@ nav a {
 
 .cplusplus {
     font-size: 0.7em;
-    background-color: #f78181;
+    background-color: #ff9b9b;
 }
 
 .opengl {
     font-size: 0.7em;
-    background-color: #66b4ff;
+    background-color: #8ac7ff;
 }
 
 .short-description {
